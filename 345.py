@@ -1,6 +1,6 @@
 x = input("Enter: ")
-vowels = set('aeiouAEIOU')
 def rev(x):
+    vowels = set('aeiouAEIOU')
     x = list(x)
     left = 0
     right = len(x) - 1
