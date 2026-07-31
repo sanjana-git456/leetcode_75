@@ -1,16 +1,21 @@
-x = input("Enter: ").replace(" ", "")
-def compress(x):
-    if len(x) == 1:
-        return 1
-    s = []
+def compress(chars):
+    write = 0
     i = 0
-    while i < len(x):
+    while i < len(chars):
         j = i
-        while j < len(x) and x[j] == x[i]:
+        while j < len(chars) and chars[j] == chars[i]:
             j += 1
-        s.append(x[i])
-        if j-i > 1:
-            s.append(j-i)
+        chars[write] = chars[i]
+        write += 1
+        group_len = j - i
+        if group_len > 1:
+            for digit in str(group_len):
+                chars[write] = digit
+                write += 1
         i = j
-    return ''.join(map(str, s))
-print(compress(x))
+    return write
+
+x = input("Enter: ").replace(" ", "")
+chars = list(x)
+length = compress(chars)
+print(length)
