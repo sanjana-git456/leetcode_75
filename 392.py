@@ -1,13 +1,11 @@
 x = input("Enter: ")
 y = input("Enter: ")
 def substr(x,y):
-    l = []
-    for i in x:
-        if i in y:
-            l.append(i)
-    f = ''.join(l)
-    if y == f:
-        return True
-    else:
-        return False
+    i = 0
+    j = 0
+    while j < len(x):
+        if i < len(y) and x[i] == x[j]:
+            i += 1
+        j += 1
+    return i == len(y)
 print(substr(x,y))
