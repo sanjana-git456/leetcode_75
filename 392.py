@@ -4,7 +4,7 @@ def substr(x,y):
     i = 0
     j = 0
     while j < len(x):
-        if i < len(y) and x[i] == x[j]:
+        if i < len(y) and x[j] == y[i]:
             i += 1
         j += 1
     return i == len(y)
