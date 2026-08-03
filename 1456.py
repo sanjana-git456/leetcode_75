@@ -19,3 +19,4 @@ def vowel(x,k):
         left += 1
         right += 1
     return m
+print(vowel(x,k))
