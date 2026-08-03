@@ -1,15 +1,15 @@
 x = list(map(int, input("Enter: ").split()))
 k = int(input("Enter: "))
 def avg(x,k):
-    m = 0
     left = 0
-    right = k-1
-    s = x[left]
-    while right <= len(x):
-        s = sum(x[left:right])
-        a = s // k
+    right = left + k - 1
+    s = sum(x[left:right+1])
+    m = s/k
+    while right <= len(x) - 2:
+        s = s - x[left] + x[right + 1]
+        a = s / k
         m = max(m, a)
-        right += 1
         left += 1
+        right += 1
     return m
 print(avg(x,k))
