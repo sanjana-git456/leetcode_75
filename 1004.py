@@ -3,7 +3,7 @@ k = int(input("Enter: "))
 def consec(x,k):
     left = 0
     c = 0
-    m = left + right - 1
+    m = 0
     for right in range(len(x)):
         if x[right] == 0:
             c += 1
@@ -11,5 +11,6 @@ def consec(x,k):
             if x[left] == 0:
                 c -= 1
             left += 1
-        m = max(m, left + right - 1)
+        m = max(m, right-left+1)
     return m
+print(consec(x,k))
