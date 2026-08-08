@@ -8,8 +8,9 @@ def one(x):
         if x[right] == 0:
             c += 1
         while c > 1:
+            if x[left] == 0:
+                c -= 1
             left += 1
-            c -= 1
         ans = max(ans, right-left)
     return ans
 print(one(x))
