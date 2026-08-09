@@ -21,6 +21,5 @@ def close(x,y):
         cond2 = True
     if cond1 and cond2:
         return True
-    else:
-        return False
+    return False
 print(close(x,y))
