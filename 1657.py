@@ -17,7 +17,7 @@ def close(x,y):
             d2[y[i]] += 1
         else:
             d2[y[i]] = 1
-    if sorted(d1.values() == d2.values()):
+    if sorted(d1.values()) == sorted(d2.values()):
         cond2 = True
     if cond1 and cond2:
         return True
