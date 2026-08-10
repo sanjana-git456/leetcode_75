@@ -11,7 +11,7 @@ def rc(x):
         c.append(a)
     for i in range(3):
         for j in range(3):
-            if r[i][j] == c[i][j]:
+            if r[i] == c[j]:
                 count += 1
     return count
 print(rc(grid))
