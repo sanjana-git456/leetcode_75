@@ -1,4 +1,4 @@
-x = input("Enter: ")
+x = input("Enter encoded: ")
 def decode(x):
     numstack = []
     strstack = []
