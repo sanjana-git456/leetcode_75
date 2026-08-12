@@ -10,4 +10,4 @@ class RecentCounter:
             if i >= t-3000:
                 valid.append(i)
         self.requests = valid
-            return len(self.requests)
+        return len(self.requests)
