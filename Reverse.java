@@ -13,4 +13,9 @@ public class Reverse {
         return sb.toString();
     }
 
+    public static void main(String[] args) {
+        Reverse r = new Reverse();
+        String s = "the sky is blue";
+        System.out.println(r.rev(s));
+    }
 }
