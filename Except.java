@@ -13,7 +13,8 @@ public class Except {
                     p *= x[j];
                 }
             }
+            al.add(p);
         }
-        return p;
+        return al;
     }
 }
