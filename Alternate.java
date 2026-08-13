@@ -1,18 +1,19 @@
-import java.util.*;
+
 public class Alternate {
-    public char[] alt(char[] x, char[] y) {
+
+    public String alt(char[] x, char[] y) {
         int t = Math.min(x.length, y.length);
-        ArrayList<Character> l = new ArrayList<>();
+        StringBuilder l = new StringBuilder();
         for (int i = 0; i < t; i++) {
-            l.add(x[i]);
-            l.add(y[i]);
+            l.append(x[i]);
+            l.append(y[i]);
         }
         for (int i = t; i < x.length; i++) {
-            l.add(x[i]);
+            l.append(x[i]);
         }
         for (int i = t; i < y.length; i++) {
-            l.add(y[i]);
+            l.append(y[i]);
         }
-
+        return l.toString();
     }
 }
