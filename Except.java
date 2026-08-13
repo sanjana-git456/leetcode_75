@@ -16,4 +16,10 @@ public class Except {
         }
         return al;
     }
+
+    public static void main(String[] args) {
+        Except e = new Except();
+        int[] arr = {1, 2, 3, 4};
+        System.out.println(e.exc(arr));
+    }
 }
