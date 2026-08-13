@@ -21,6 +21,6 @@ public class Alternate {
         Alternate al = new Alternate();
         char[] arr1 = "abc".toCharArray();
         char[] arr2 = "pqr".toCharArray();
-        al.alt(arr1, arr2);
+        System.out.println(al.alt(arr1, arr2));
     }
 }
