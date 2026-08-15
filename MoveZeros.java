@@ -1,4 +1,6 @@
 
+import java.util.*;
+
 public class MoveZeros {
 
     public int[] zero(int[] x) {
@@ -14,9 +16,11 @@ public class MoveZeros {
         }
         return x;
     }
-    public static void  main(String[] args) {
+
+    public static void main(String[] args) {
         MoveZeros mz = new MoveZeros();
-        int[] arr = {1,5,0,2,0,4,7,0,6};
-        System.out.println(mz.zero(arr));
+        int[] arr = {1, 5, 0, 2, 0, 4, 7, 0, 6};
+        int[] result = mz.zero(arr);
+        System.out.println(Arrays.toString(result));
     }
 }
