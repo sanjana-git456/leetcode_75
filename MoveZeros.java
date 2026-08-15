@@ -19,7 +19,7 @@ public class MoveZeros {
 
     public static void main(String[] args) {
         MoveZeros mz = new MoveZeros();
-        int[] arr = {1, 5, 0, 2, 0, 4, 7, 0, 6};
+        int[] arr = {1, 5, 6};
         int[] result = mz.zero(arr);
         System.out.println(Arrays.toString(result));
     }
