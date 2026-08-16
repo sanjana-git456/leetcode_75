@@ -19,7 +19,7 @@ def dota(x):
             winner = d.popleft()
             d.append(winner+n)
     if r != []:
-        print("Radiant")
+        return "Radiant"
     else:
-        print("Dire")
+        return "Dire"
 dota(x)
