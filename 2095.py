@@ -12,6 +12,8 @@ def middle(head):
         fast = fast.next.next
     prev.next = slow.next
     slow.next = None
+    if head.next == None:
+        return None
 head = Node(1)
 head.next = Node(2)
 head.next.next = Node(3)
