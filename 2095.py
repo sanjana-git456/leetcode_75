@@ -3,6 +3,8 @@ class Node:
         self.val = val
         self.next = next
 def middle(head):
+    if head.next == None:
+        return None
     slow = head
     fast = head
     prev = None
@@ -12,8 +14,8 @@ def middle(head):
         fast = fast.next.next
     prev.next = slow.next
     slow.next = None
-    if head.next == None:
-        return None
+    return head
+
 head = Node(1)
 head.next = Node(2)
 head.next.next = Node(3)
