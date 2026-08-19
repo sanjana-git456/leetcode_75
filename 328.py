@@ -18,4 +18,13 @@ def oddeven(head):
         odd.next = odd.next.next
         even = even.next
         odd = odd.next
+        odd.next = evenhead
     return head
+def printnode(head):
+    vals = []
+    while head:
+        vals.append(head.val)
+        head = head.next
+    print(vals)
+result = oddeven(head)
+printnode(result)
