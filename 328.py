@@ -18,7 +18,7 @@ def oddeven(head):
         odd.next = odd.next.next
         even = even.next
         odd = odd.next
-        odd.next = evenhead
+    odd.next = evenhead
     return head
 def printnode(head):
     vals = []
