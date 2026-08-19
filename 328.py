@@ -10,6 +10,8 @@ head.next.next.next = Node(4)
 head.next.next.next.next = Node(5)
 
 def oddeven(head):
+    if not head or not head.next:
+        return head
     odd = head
     even = head.next
     evenhead = even
