@@ -10,8 +10,6 @@ head.next.next.next = Node(4)
 head.next.next.next.next = Node(5)
 
 def oddeven(head):
-    if not head or not head.next:
-        return head
     odd = head
     even = head.next
     evenhead = even
@@ -22,11 +20,13 @@ def oddeven(head):
         even = even.next
     odd.next = evenhead
     return head
+
 def printnode(head):
     vals = []
     while head:
         vals.append(head.val)
         head = head.next
     print(vals)
+
 result = oddeven(head)
 printnode(result)
