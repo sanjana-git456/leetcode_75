@@ -12,7 +12,10 @@ head.next.next.next.next = Node(5)
 def oddeven(head):
     odd = head
     even = head.next
+    evenhead = even
     while even and even.next:
         even.next = even.next.next
         odd.next = odd.next.next
+        even = even.next
+        odd = odd.next
     return head
